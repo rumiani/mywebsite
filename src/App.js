@@ -1,8 +1,7 @@
 import React from 'react';
-import { Route, Switch ,BrowserRouter as Router ,HashRouter} from 'react-router-dom';
+import { Route, Switch ,BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Blog from './components/Pages/Blog/Blog';
 import Home from './components/Pages/Home/Home';
 import Projects from './components/Pages/Projects/Projects';
 
@@ -11,16 +10,14 @@ import Projects from './components/Pages/Projects/Projects';
 function App() {
   return (
     // <React.Fragment>
-    <HashRouter basename='/'>
-    <Router>
+    <Router >
       <Navbar/>
       <Switch>
-        <Route path='/' exact component={Home}/>
+        <Route path={process.env.PUBLIC_URL + '/'} exact component={Home}/>
         <Route path='/Portfolio' component={Projects}/>
-        <Route path='/blog' component={Blog}/>
+        {/* <Route path='/blog' component={Blog}/> */}
       </Switch>
       </Router>
-      </HashRouter>
       // </React.Fragment>
   );
 }
