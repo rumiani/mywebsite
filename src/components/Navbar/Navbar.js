@@ -21,19 +21,19 @@ const closeMobileMenu = ()=>setClick(false)
                     </div>
                     <ul className={click?'nav-menu active':'nav-menu'}>
                         <li className="nav-item">
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu} >
+                            <Link to='/' className='nav-links' onClick={()=>{closeMobileMenu();window.scrollTo(0, 0);}} >
                                 Home
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <a href='#footer' className='nav-links' onClick={closeMobileMenu} >
+                            <a href='#contact' className='nav-links' onClick={closeMobileMenu} >
                                 Contact Me
                             </a>
                         </li>
                         <li className="nav-item">
-                            <Link to='/Portfolio' className='nav-links' onClick={closeMobileMenu} >
+                            <a href='#portfolio' className='nav-links' onClick={closeMobileMenu} >
                                 Portfolio
-                            </Link>
+                            </a>
                         </li>
                         <li className="nav-item">
                             <Link to='/assets/resume.pdf' target='_blank' className='nav-links' onClick={closeMobileMenu} >

@@ -6,7 +6,7 @@ const ContactForm = ()=> {
         <form   className="form-class"
             action="https://formspree.io/f/xjvjarkb"
             method="POST"> 
-            <h2 id='getInTouch'>Get In Touch</h2>
+            <h2  id='contact'>Get In Touch</h2>
             <p>Whether you have a question or just want to say hi, I'll try my best to get back to you soon!</p>       
         <div className="form-group">
             {/* <label for="Name" className="label">Your name</label> */}

@@ -20,10 +20,10 @@ const HeroSection = () => {
                 clearInterval(interval);
             }
         }, 50);         
-    })
+    },[])
     
     return ( 
-        <div className="hero-container" 
+        <div className="hero-container" id='#/top'
         style={{backgroundImage: `url(./assets/pic-2.jpg)`}}>
                     <p className='whoIAm'></p>
                 <div className="intruduce">
@@ -32,7 +32,7 @@ const HeroSection = () => {
                         work in a team to learn more and gain experience. I'm open to work if your company has a positioin for me.                    
                         
                     </p>
-                <a className='contactMe'href='#footer'> 
+                <a className='contactMe'href='#contact'> 
                     Get In Touch
                 </a>
                 </div>

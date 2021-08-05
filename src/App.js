@@ -9,16 +9,22 @@ import Projects from './components/Pages/Projects/Projects';
 
 function App() {
   return (
-    // <React.Fragment>
-    <Router >
+    
+    <React.Fragment>
+      <Router >
       <Navbar/>
-      <Switch>
-        <Route path={process.env.PUBLIC_URL + '/'} exact component={Home}/>
-        <Route path='/Portfolio' component={Projects}/>
-        {/* <Route path='/blog' component={Blog}/> */}
-      </Switch>
+      <Home/>
+      {/* <Projects/> */}
       </Router>
-      // </React.Fragment>
+     {/* <Router >
+       <Navbar/>
+       <Switch>
+         <Route path={process.env.PUBLIC_URL + '/'} exact component={Home}/>
+         <Route path='/Portfolio' component={Projects}/>
+         {/* <Route path='/blog' component={Blog}/> */}
+       {/* </Switch> */}
+       {/* </Router>  */}
+      </React.Fragment>
   );
 }
 

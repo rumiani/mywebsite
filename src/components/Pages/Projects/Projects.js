@@ -45,11 +45,11 @@ const Projects = () => {
 // })
 // console.log(projects);
     return ( 
-        <div className="portfolio">
-            <h1> My Portfolio</h1>
+        <div className="portfolio" id='portfolio'>
+            {/* <h1 > My Portfolio</h1> */}
             <div className='projects'>
                 <TopProjects/>
-                {
+                {/* {
                     otherProjects.map((project,index)=>{
                         return <Project
                         name={project.name}
@@ -60,9 +60,9 @@ const Projects = () => {
                         key={index}
                          />
                     })
-                }
+                } */}
             </div>
-            <Footer/>                            
+            {/* <Footer/>                             */}
         </div>
      );
 }

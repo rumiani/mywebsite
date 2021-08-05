@@ -5,11 +5,11 @@ import './Footer.css'
 import SocialIcons from './SocialIcons/SocialIcons'
 const Footer = () => {
     return ( 
-        <div className="footer-container" id='footer'>
+        <div className="footer-container" id='#/footer'>
             <ContactForm />
             <SocialIcons/>
             <div className="logo-webRights">
-                <Link to='/' className='footer-logo'>
+                <Link to='/' className='footer-logo' onClick={window.scrollTo(0, 0)}>
                     Rumiani &nbsp; <i className='fas fa-laptop-code' />
                 </Link>
                 <div className="webRights">
